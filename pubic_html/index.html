@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vuddy</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://meet.jit.si/external_api.js"></script>
+
+<script>
+	$(document).ready(function(){
+			var domain = "meet.jit.si";
+		var options = {
+			roomName: "Vuddy",
+			width: 1080,
+			height: 1920,
+			parentNode: document.querySelector('#meet')
+		}
+		var api = new JitsiMeetExternalAPI(domain, options);
+	})
+</script>
+
+</head>
+<body>
+<h1>Vuddy your quick chat</h1>
+<div id="meet">
+	meeting
+</div>
+
+</body>
+</html>
